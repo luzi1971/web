@@ -1,0 +1,98 @@
+/* ========================================================
+   1. ESTILOS GERAIS DA PÁGINA
+   ======================================================== */
+
+/* O seletor '*' aplica regras a TODOS os elementos para padronizar o espaçamento básico */
+* {
+    box-sizing: border-box; /* Garante que 'padding' e 'border' não alterem o tamanho total dos elementos */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização do corpo (fundo e fonte geral) */
+body {
+    font-family: Arial, sans-serif; /* Define uma fonte simples e legível */
+    background-color: #f4f7f6;     /* Cor de fundo suave (cinza-claro) */
+    color: #333333;                /* Cor do texto para garantir bom contraste */
+    padding: 20px;
+}
+
+
+/* ========================================================
+   2. ESTRUTURA DA SEÇÃO DE DESTAQUES
+   ======================================================== */
+
+/* Centraliza o conteúdo geral da seção */
+.destaques {
+    max-width: 1000px; /* Limita a largura máxima para não espalhar demais em telas grandes */
+    margin: 0 auto;    /* Centraliza a seção horizontalmente na tela */
+    text-align: center;
+}
+
+.destaques h1 {
+    color: #0d47a1;     /* Azul escuro profissional */
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+
+/* ========================================================
+   3. USO DO FLEXBOX NOS CARTÕES
+   ======================================================== */
+
+/* Aplicamos o Flexbox na caixa pai (container) que segura os 3 cartões */
+.container-cards {
+    display: flex;             /* Ativa o modo Flexbox nos elementos filhos */
+    flex-wrap: wrap;           /* Permite que os cartões pulem para a linha de baixo se a tela for pequena (celular) */
+    justify-content: center;   /* Centraliza os cartões horizontalmente */
+    gap: 20px;                 /* Cria um espaço uniforme entre os cartões */
+}
+
+/* Estilo individual de cada cartão */
+.card {
+    background-color: #ffffff; /* Fundo branco para destacar os cartões */
+    border-radius: 8px;        /* Bordas levemente arredondadas */
+    padding: 20px;
+    text-align: left;           /* Alinha o texto interno à esquerda para facilitar a leitura */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar sensação de relevo */
+    
+    /* Configurações do Flexbox para os cartões filhos */
+    flex: 1 1 280px; /* Permite esticar e diminuir, com tamanho mínimo ideal de 280px */
+    max-width: 320px; /* Impede que um único cartão fique largo demais */
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #1a237e;
+}
+
+/* Estilo para os selos/rótulos de verificação */
+.rotulo {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+/* Diferenciando as cores dos selos de acordo com a checagem */
+.mito .rotulo {
+    background-color: #ffebee; /* Fundo vermelho claro */
+    color: #c62828;            /* Texto vermelho escuro */
+}
+
+.verdade .rotulo {
+    background-color: #e8f5e9; /* Fundo verde claro */
+    color: #2e7d32;            /* Texto verde escuro */
+}
+
+.card p {
+    line-height: 1.5; /* Espaçamento entre linhas para melhorar a leitura */
+    font-size: 0.95rem;
+}

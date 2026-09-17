@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- O 'meta charset' garante que acentos e caracteres especiais em português funcionem corretamente -->
+    <meta charset="UTF-8">
+    
+    <!-- Garante que a página fique responsiva e se ajuste bem a telas de celulares e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Checagem de Fatos - Pedras na Vesícula</title>
+    
+    <!-- Conecta este arquivo HTML ao arquivo de estilos externo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- A tag <main> indica o conteúdo principal e mais importante da página -->
+    <main>
+
+        <!-- A tag <section> define uma seção temática na página. Usamos a classe "destaques" para estilizar no CSS -->
+        <section class="destaques">
+            
+            <!-- <h1> é o título principal da nossa seção de fatos -->
+            <h1>Verificação de Fatos: Pedras na Vesícula</h1>
+            
+            <!-- Parágrafo introdutório simples -->
+            <p class="subtitulo">Aprenda a diferenciar mitos de verdades sobre a saúde da sua vesícula.</p>
+
+            <!-- <div> usada como container/caixa principal para agrupar nossos 3 cartões e aplicar o Flexbox -->
+            <div class="container-cards">
+
+                <!-- Cartão 1: Artigo individual dentro de uma tag <article> -->
+                <article class="card mito">
+                    <!-- <h2> para o título do item/fato -->
+                    <h2>1. Quem tem pedras na vesícula não pode comer gordura?</h2>
+                    <!-- Parágrafo contendo o selo/rótulo de verificação -->
+                    <p class="rotulo">MITO PARCIAL / VERDADE</p>
+                    <!-- Parágrafo explicando a checagem -->
+                    <p>A gordura estimula a contração da vesícula e pode provocar dor forte (cólica biliar). Evitar refeições gordurosas ajuda a prevenir crises, mas não dissolve nem "cura" as pedras.</p>
+                </article>
+
+                <!-- Cartão 2 -->
+                <article class="card mito">
+                    <h2>2. Tomar azeite com limão expulsa as pedras naturalmente?</h2>
+                    <p class="rotulo">PERIGO / MITO</p>
+                    <p>FALSO! Receitas caseiras não dissolvem cálculos biliares. O que sai nas fezes são misturas saponificadas do azeite com o suco. Além de ineficaz, pode causar diarreia e adiar o tratamento correto.</p>
+                </article>
+
+                <!-- Cartão 3 -->
+                <article class="card verdade">
+                    <h2>3. Nem todas as pessoas com pedras precisam operar?</h2>
+                    <p class="rotulo">VERDADE</p>
+                    <p>Muitas pessoas têm pedras na vesícula e nunca apresentam sintomas (assintomáticas). A necessidade de cirurgia depende de avaliação médica sobre riscos, tamanho e sintomas.</p>
+                </article>
+
+            </div> <!-- Fim do container-cards -->
+
+        </section> <!-- Fim da seção de destaques -->
+
+    </main>
+
+</body>
+</html>
